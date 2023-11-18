@@ -4,6 +4,7 @@
       padding: 0;
       box-sizing: border-box;
       height: 100vh;
+      color: #fff;
       background: linear-gradient(to right, #222,#222);
     }
     footer {
@@ -49,7 +50,7 @@
     }
     section h2 {
       line-height: 1.5;
-      color: #222;
+      color: rgb(135, 214, 17);;
       text-shadow: 2px 2px 4px rgba(0,0,0,0.1);
     }
     section p {

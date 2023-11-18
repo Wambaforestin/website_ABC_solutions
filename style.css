@@ -3,7 +3,8 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      height: 80vh;
+      height: 100vh;
+      background: linear-gradient(to right, #222,#222);
     }
     footer {
       background: linear-gradient(to right, #222,#222);
@@ -23,8 +24,9 @@
       float: left;
     }
     nav li:hover{
-      background-color: #fff;
+      background-color: rgb(135, 214, 17);
       border-color: rgb((130, 214, 3), 47);
+      color: #222;
     }
 
     nav ul {

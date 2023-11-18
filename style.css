@@ -83,9 +83,14 @@
         border: 1px solid #222;
         border-radius: 5px;
       }
-      .form input[type="submit"] {
+      .form input {
         background-color: rgb(135, 214, 17);
         color: #222;
+        cursor: pointer;
+      }
+      .form input[type="submit"] {
+        background-color: rgb(135, 214, 17);
+        color: #fff;
         cursor: pointer;
       }
       .form input[type="submit"]:hover {

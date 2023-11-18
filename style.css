@@ -85,7 +85,7 @@
       }
       .form input[type="submit"] {
         background-color: rgb(135, 214, 17);
-        color: white;
+        color: #222;
         cursor: pointer;
       }
       .form input[type="submit"]:hover {

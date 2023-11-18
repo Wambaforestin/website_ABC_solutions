@@ -83,8 +83,7 @@
         border: 1px solid #222;
         border-radius: 5px;
       }
-      .form input {
-        background-color: rgb(135, 214, 17);
+      .form input,label {
         color: #222;
         cursor: pointer;
       }

@@ -139,3 +139,91 @@ nav ul li a {
     background-color:#09004da6;
     cursor: pointer;
 }
+/* adding responsitivity to the page and its elemets */
+@media (max-width: 991px) {
+    .content {
+        max-width: 100%;
+    }
+    .content h1 {
+        font-size: 30px;
+        line-height: 30px;
+    }
+    .content p {
+        font-size: 16px;
+    }
+    .content span {
+        font-size: 30px;
+    }
+    .navigation {
+        display: none;
+    }
+
+    .navigation.active {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #09004da6;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .navigation li a {
+        font-size: 1.5em;
+        margin: 10px 0;
+        display: inline-block;
+    }
+
+    .toggle {
+        position: relative;
+        width: 32px;
+        height: 40px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100000;
+        cursor: pointer;
+    }
+
+    .toggle.active {
+        position: fixed;
+        right: 40px;
+    }
+
+    .toggle::before {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        transform: translateY(-10px);
+        box-shadow: 0 10px 0 #fff;
+        transition: 0.25s;
+    }
+
+    .toggle.active::before {
+        transform: translateY(0px) rotate(45deg);
+        box-shadow: 0 0 0 #fff;
+    }
+
+    .toggle::after {
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 2px;
+        background: #fff;
+        transform: translateY(10px);
+        transition: 0.25s;
+    }
+
+    .toggle.active::after {
+        transform: translateY(0px) rotate(-45deg);
+    }
+    /* removing the create account button on the nav bar and not the .content */
+    nav .btn {
+        display: none;
+    }       
+}

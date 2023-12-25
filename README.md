@@ -43,3 +43,4 @@ Incluez des captures d'écran qui illustrent les étapes clés de votre configur
 Ce projet a été réalisé dans le cadre du défi d’administration de postes clients proposé par l’entreprise ABC Solutions. Le but de ce projet était de configurer un poste client Linux, de gérer les autorisations avec setfacl et getfacl, de développer un site web conforme au design de l’entreprise, et de le déployer sur un serveur web.
 
 <img src="projet/resultat.jpg" alt="Résultat du projet" width="50%"/>
+<img src="projet/resultat-mobile.jpg" alt="Résultat du projet" width="50%"/>

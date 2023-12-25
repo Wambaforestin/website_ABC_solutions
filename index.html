@@ -12,7 +12,8 @@
   <div class="container">
     <nav>
       <img src="images/icon.png" alt="logo" class="logo">
-      <ul>
+      <div class="toggle"></div>
+      <ul class="navigation">
         <li><a href="#">Home</a></li>
         <li><a href="#">About Us</a></li>
         <li><a href="#">Services</a></li>
@@ -45,6 +46,8 @@
         </form>
     </div>
   </div>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script>
     function show() {
       alert("Thanks you for your interest in our services. We will contact you shortly.");
@@ -56,6 +59,13 @@
       document.getElementById("form").style.display = "none";
      }  
     }
+     //toggle 
+     const menutoggle = document.querySelector('.toggle');
+     const navigation = document.querySelector('.navigation');
+     menutoggle.onclick = function () {
+         menutoggle.classList.toggle('active')
+         navigation.classList.toggle('active')
+     }
   </script>
 </body>
 </html>

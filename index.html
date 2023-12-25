@@ -1,217 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <title>ABC solutin - website</title>
+  <title>Webpage ABC - Solutions</title>
 </head>
-<style>
-  /* Adding a good and appropriate styling with beuatiful animations and colors to the the index.html  */
-  * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-body {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 16px;
-  line-height: 1.6em;
-  margin: 0;
-}
-header {
-  background: #35424a;
-  color: #e8491d;
-  padding-top: 30px;
-  min-height: 70px;
-  border-bottom: #e8491d 3px solid;
-}
 
-.branding {
-   float: left;
-  padding: 5px 0 0 0;
-}
-.branding h1 {
-  margin: 0;
-}
-nav {
-  float: right;
-  padding: 20px 0 0 0;
-}
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-nav li {
-  display: inline;
-  margin-left: 40px;
-  padding: 0 5px 0 5px;
-}
-nav a {
-  color:  #e8491d;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 16px;
-}
-nav a:hover {
-  color: #cccccc;
-}
-#showcase {
-  max-height: 400px;
-  background: url('../images/ABC-Solutions-1.jpg') no-repeat 0 -400px;
-  text-align: center;
-  color: #ffffff;
-}
-#showcase h1 {
-  margin-top: 100px;
-  font-size: 55px;
-  margin-bottom: 10px;
-}
-#showcase p {
-  font-size: 20px;
-}
-#newsletter {
-  padding: 15px;
-  color: #ffffff;
-  background: #35424a;
-}
-#newsletter h1 {
-  font-size: medium;
-  float: left;
-}
-#newsletter form {
-  float: right;
-  margin-top: 15px;
-}
-#newsletter input[type="email"] {
-  padding: 4px;
-  height: 25px;
-  width: 250px;
-}
-.button_1 {
-  height: 30px;
-  background: #e8491d;
-  border: none;
-  color: #ffffff;
-  padding: 5px 25px;
-  margin-left: 10px;
-  cursor: pointer;
-}
-.button_1:hover {
-  background: #d3441a;
-}
-#boxes {
-  margin-top: 20px;
-  overflow: hidden;
-}
-#boxes .box {
-  float: left;
-  text-align: center;
-  width: 30%;
-  padding: 5px;
-}
-#boxes .box img {
-  width: 90px;
-}
-footer {
-  padding: 20px;
-  margin-top: 20px;
-  color: #ffffff;
-  background-color: #e8491d;
-  text-align: center;
-}
-
-@media(max-width: 768px) {
-  header {
-    padding-top: 20px;
-  }
-  .branding {
-    float: none;
-    text-align: center;
-  }
-  nav {
-    float: none;
-    padding-top: 5px;
-  }
-  #newsletter h1,
-  #newsletter form,
-  .button_1 {
-    display: block;
-    text-align: center;
-    margin: 0;
-    width: 100%;
-  }
-  #newsletter input[type="email"],
-  .button_1 {
-    width: 100%;
-    margin-bottom: 5px;
-  }
-  #boxes .box {
-    width: 100%;
-    text-align: center;
-  }
-}
-
-</style>
 <body>
-  <header>
-   <!-- creating a beautiful nav bar for the website that reflects the body  -->
-    <div class="container">
-      <div id="branding">
-        <h1><span class="highlight">ABC</span> Solutions</h1>
-      </div>
-      <nav>
-        <ul>
-          <li class="current"><a href="#index">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-        </ul>
-      </nav>
-    </div>
-
   <div class="container">
-  </header>
-  <!-- creating a beautiful section for the website with -->
-    <section id="showcase">
-      <div class="container">
-        <h1>ABC Solutions</h1>
-        <p>ABC Solutions is a company that provides solutions to your problems</p>
-      </div>
-    </section>
-    <!-- creating a beautiful section for the website with -->
-    <section id="boxes">
-      <div class="container">
-        <div class="box">
-          <img src="images/1.jpeg">
-          <h3>Web Development</h3>
-          <p>ABC Solutions is a company that provides solutions to your problems</p>
-        </div>
-        <div class="box">
-          <img src="images/2.jpg">
-          <h3>Web Design</h3>
-          <p>ABC Solutions is a company that provides solutions to your problems</p>
-        </div>
-        <div class="box">
-          <img src="images/3.jpg">
-          <h3>Marketing</h3>
-          <p>ABC Solutions is a company that provides solutions to your problems</p>
-        </div>
-      </div>
-    </section>
-  <!-- creating a beautiful section for the website with -->
-    <section id="newsletter">
-      <div class="container">
-        <h1>Subscribe To Our Newsletter</h1>
-        <form>
-          <input type="email" placeholder="Enter Email...">
-          <button type="submit" class="button_1">Subscribe</button>
+    <nav>
+      <img src="images/icon.png" alt="logo" class="logo">
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About Us</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+      <button class="btn" onclick="showForm()">Create Account</button>
+        <form action="#" id="form" style="display: none;">
+          <h1>Create Account</h1>
+          <input type="text" name="" id="" placeholder="Enter Name"><br>
+          <input type="text" name="" id="" placeholder="Enter Email"><br>
+          <input type="text" name="" id="" placeholder="Enter Password"><br>
+          <input type="text" name="" id="" placeholder="Confirm Password"><br>
+          <input type="text" name="" id="" placeholder="Enter Phone Number"><br>
+          <input type="text" name="" id="" placeholder="Enter Address"><br>
+          <input type="text" name="" id="" placeholder="Enter City"><br>
+        <input type="submit" value="submit" onclick="show()">
         </form>
-      </div>
-    </section>
-  <!-- creating a beautiful footer for the website with -->
-    <footer>
-      <p>ABC Solutions &copy; 2018</p>
-    </footer>
-  </div>
-</body>
+    </nav>
 
+
+    <div class="content">
+      <h1>Dsicover<br>the advantages of working with us</h1>
+      <p><span>Are</span> you looking for an effective and personalized solution to optimize your business? You are in the right
+        place. At abc solutions, we support you in implementing innovative strategies adapted to your objectives.
+        Whether you need advice, training, coaching or technical support, we are here to help. Find out how we can
+        transform your business in just a few clicks.</p>
+        <form action="#">
+          <input type="text" placeholder="Enter your email address">
+          <button class="btn" onclick="show()">Get Started</button>
+        </form>
+    </div>
+  </div>
+  <script>
+    function show() {
+      alert("Thanks you for your interest in our services. We will contact you shortly.");
+    }
+    function showForm() {
+     if(document.getElementById("form").style.display == "none") {
+      document.getElementById("form").style.display = "block";
+     } else {
+      document.getElementById("form").style.display = "none";
+     }  
+    }
+  </script>
+</body>
 </html>

@@ -39,7 +39,7 @@ Capture d'écran :
 
 Incluez des captures d'écran qui illustrent les étapes clés de votre configuration, de la gestion des autorisations, du développement du site web et de la configuration du serveur web. Assurez-vous que les captures d'écran sont annotées pour expliquer ce qui est montré.
 
-#Projet réalisé
+# Projet réalisé
 Ce projet a été réalisé dans le cadre du défi d’administration de postes clients proposé par l’entreprise ABC Solutions. Le but de ce projet était de configurer un poste client Linux, de gérer les autorisations avec setfacl et getfacl, de développer un site web conforme au design de l’entreprise, et de le déployer sur un serveur web.
 
 <img src="projet/resultat.jpg" alt="Résultat du projet" width="50%"/>

@@ -156,6 +156,25 @@ section {
     }
 }
 
+.home{
+
+    .flex{
+        display: flex;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 2rem;
+
+        .content{
+            flex: 1 1 50rem;
+        }
+
+        .image{
+            flex: 1 1 30rem; 
+            text-align: center;
+        }
+    }
+}
+
 
 
 

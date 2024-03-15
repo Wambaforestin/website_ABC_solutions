@@ -4,68 +4,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
-  <title>Webpage ABC - Solutions</title>
+  <title>Website ABC - Solution</title>
+  <!-- custom links for external file and websites -->
+  <link rel="stylesheet" href="CSS/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.0.1/remixicon.css">
 </head>
 
 <body>
-  <div class="container">
-    <nav>
-      <img src="images/icon.png" alt="logo" class="logo">
-      <div class="toggle"></div>
-      <ul class="navigation">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About Us</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact Us</a></li>
-      </ul>
-      <button class="btn" onclick="showForm()">Create Account</button>
-        <form action="#" id="form" style="display: none;">
-          <h1>Create Account</h1>
-          <input type="text" name="" id="" placeholder="Enter Name"><br>
-          <input type="text" name="" id="" placeholder="Enter Email"><br>
-          <input type="text" name="" id="" placeholder="Enter Password"><br>
-          <input type="text" name="" id="" placeholder="Confirm Password"><br>
-          <input type="text" name="" id="" placeholder="Enter Phone Number"><br>
-          <input type="text" name="" id="" placeholder="Enter Address"><br>
-          <input type="text" name="" id="" placeholder="Enter City"><br>
-        <input type="submit" value="submit" onclick="show()">
-        </form>
-    </nav>
-
-
-    <div class="content">
-      <h1>Dsicover<br>the advantages of working with us</h1>
-      <p><span>Are</span> you looking for an effective and personalized solution to optimize your business? You are in the right
-        place. At abc solutions, we support you in implementing innovative strategies adapted to your objectives.
-        Whether you need advice, training, coaching or technical support, we are here to help. Find out how we can
-        transform your business in just a few clicks.</p>
-        <form action="#">
-          <input type="text" placeholder="Enter your email address">
-          <button class="btn" onclick="show()">Get Started</button>
-        </form>
+  <!-- header section -->
+  <header class="header">
+    <section class="flex">
+      <a href="#home" class="logo"><i class="ri-bubble-chart-fill"></i>ABC-Solution</a>
+      <a href="#download" class="btn">Download App</a>
+    </section>
+  </header>
+  <!-- nav bar section-->
+  <div class="navbar">
+    <div class="nav">
+      <a href="#home" class="ri-home-4-line"><span>Home</span></a>
+      <a href="#about" class="ri-information-line"><span>About</span></a>
+      <a href="#download" class="ri-download-2-line"><span>Download</span></a>
+      <a href="#pricing" class="ri-price-tag-3-line"><Span>Pricing</Span></a>
+      <a href="#Home" class="ri-user-3-line"><span>Login</span></a>
     </div>
   </div>
-  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <script>
-    function show() {
-      alert("Thanks you for your interest in our services. We will contact you shortly.");
-    }
-    function showForm() {
-     if(document.getElementById("form").style.display == "none") {
-      document.getElementById("form").style.display = "block";
-     } else {
-      document.getElementById("form").style.display = "none";
-     }  
-    }
-     //toggle 
-     const menutoggle = document.querySelector('.toggle');
-     const navigation = document.querySelector('.navigation');
-     menutoggle.onclick = function () {
-         menutoggle.classList.toggle('active')
-         navigation.classList.toggle('active')
-     }
-  </script>
+  <!-- home section -->
+  <script src="script.js"></script>
 </body>
+
 </html>

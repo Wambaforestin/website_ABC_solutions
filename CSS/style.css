@@ -5,8 +5,8 @@
 :root {
     --primary-color: #f26a2e;
     --secondary-color: #f5f5f5;
-    --dark-color: #333;
-    --slightly-dark-color: #444;
+    --dark-color: #000017;
+    --slightly-dark-color: #333;
     --light-color: #fff;
     --danger-color: #dc3545;
     --success-color: #28a745;
@@ -166,12 +166,73 @@ section {
 
         .content{
             flex: 1 1 50rem;
+
+            h3{
+                font-size: 4rem;
+                margin-bottom: 2rem;
+                text-transform: uppercase;
+                color: var(--primary-color);
+            }
+
+            p{
+                font-size: 1.8rem;
+                line-height: 1.6;
+                padding: 1rem 0;
+                color: var(--light-color);
+                margin-bottom: 2rem;
+            }
         }
 
         .image{
             flex: 1 1 30rem; 
-            text-align: center;
+            position: relative;
+            overflow: hidden;
+
+            &::before{
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 5rem;
+                height: 30rem;
+                background-color: var(--primary-color);
+                animation: animate1 4s cubic-bezier(.29,1,.52,.98) infinite;
+            }
+
+            &::after{
+                content: '';
+                position: absolute;
+                bottom: 0;
+                right: 0;
+                width: 5rem;
+                height: 30rem;
+                background-color: var(--primary-color);
+                animation: animate2 4s cubic-bezier(.29,1,.52,.98) infinite;
+            }
+
+            img{
+                width: 100%;
+            }
         }
+    }
+
+}
+
+@keyframes animate1{
+    0%{
+        transform: translateY(-50rem);
+    }
+    100%{
+        transform: translateY(50rem);
+    }
+}
+
+@keyframes animate2{
+    0%{
+        transform: translateY(50rem);
+    }
+    100%{
+        transform: translateY(-50rem);
     }
 }
 
@@ -209,7 +270,7 @@ section {
             box-shadow: none;
             width: 100%;
             padding: 1rem;
-            background-color: var(--dark-color);
+            background-color: var(--slightly-dark-color);
 
             a {
                 padding: .5rem ;
@@ -235,10 +296,34 @@ section {
             }
         }
     }
+
+    .home{
+        .flex{
+            .content{
+                h3{
+                    font-size: 3rem;
+                }
+
+                p{
+                    font-size: 1.6rem;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 480px) {
     html {
         font-size: 50%;
+    }
+
+    .header {
+        .flex {
+            padding: 1rem;
+
+            .logo {
+                font-size: 2.5rem;
+            }
+        }
     }
 }

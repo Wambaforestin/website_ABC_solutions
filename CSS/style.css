@@ -561,6 +561,157 @@ section {
 
 }
 
+/* pricing */
+
+.pricing {
+    /* background-color: var(--slightly-dark-color); */
+
+   div {
+    .text{
+        font-size: 4rem;
+        margin-bottom: 2rem;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: var(--primary-color);
+        font-family: 'Literata', serif;
+        font-style: italic;
+        text-align: center;
+    }
+   }
+
+    .toggle-buttons {
+        display: flex;
+        justify-content: center;
+        gap: 2rem;
+        margin-top: 2rem;
+        margin-bottom: 3rem;
+
+        .button {
+            background-color: var(--primary-color);
+            width: 15rem;
+            color: var(--light-color);
+            padding: 1rem 2rem;
+            font-size: 1.8rem;
+            border-radius: 0.5rem;
+            transition: var(--transition);
+            cursor: pointer;
+            text-align: center;
+
+            &:hover,
+            &.active {
+                background-color: var(--light-color);
+                color: var(--primary-color);
+            }
+        }
+
+    }
+
+    .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, 35rem);
+        gap: 1.5rem;
+        align-items: flex-start;
+        justify-content: center;
+        margin-top: 2rem;
+        color: var(--light-color);
+
+        .box {
+            background-color: var(--slightly-dark-color);
+            padding: 2.5rem 2rem;
+            border-radius: var(--border-radius);
+            box-shadow: var(--box-shadow);
+            transition: var(--transition);
+            cursor: pointer;
+            text-align: start;
+
+            &:hover {
+                /* background-color: var(--primary-color);
+                color: var(--light-color); */
+                transform: scale(1.05);
+            }
+
+            h3 {
+                font-size: 2.5rem;
+                margin-bottom: 1rem;
+                color: var(--light-color);
+            }
+
+            .price {
+                font-size: 3rem;
+                padding: 0.5rem 0;
+                margin-top: 1rem;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+                animation: price .2s linear;
+                transform-origin: top;
+
+                span:first-child {
+                    font-size: 1.6rem;
+                    color: var(--primary-color);
+                }
+
+                span:last-child {
+                    font-size: 1.6rem;
+                    color: var(--primary-color);
+                    font-weight: 700;
+                }
+
+                &.year{
+                    display: none;
+                }
+            }
+
+            ul {
+                list-style: none;
+                padding: 1rem 0;
+                font-size: 1.6rem;
+                margin-top: 1rem;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+
+                li {
+                    font-size: 1.6rem;
+                    padding: 0.5rem 0;
+                    display: flex;
+                    align-items: center;
+                    gap: 0.5rem;
+
+                    i {
+                        font-size: 2rem;
+                        margin-left: 1rem;
+
+                        &.ri-checkbox-circle-fill {
+                            color: var(--success-color);
+                        }
+
+                        &.ri-close-circle-fill {
+                            color: var(--danger-color);
+                        }
+                    }
+                }
+            }
+
+            .btn {
+                display: block;
+                text-align: center;
+                background-color: var(--primary-color);
+                color: var(--light-color);
+                padding: 1rem 2rem;
+                font-size: 1.6rem;
+                margin-top: 1rem;
+                border-radius: var(--border-radius);
+                transition: var(--transition);
+                cursor: pointer;
+
+                &:hover {
+                    background-color: var(--light-color);
+                    color: var(--primary-color);
+                    transform: scale(1.05);
+                }
+            }
+        }
+    }
+}
+
 
 
 /* animations */
@@ -591,6 +742,20 @@ section {
 
     100% {
         transform: rotateY(0deg);
+    }
+}
+
+@keyframes price {
+    0% {
+        transform: scale(1);
+    }
+
+    50% {
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }
 
@@ -720,8 +885,14 @@ section {
     }
 
     .download {
-        
+
         .flex {
+            .image {
+                img {
+                    height: 40rem;
+                }
+            }
+²
             .content {
 
                 h3 {
@@ -733,8 +904,8 @@ section {
                 }
 
                 a {
-                   width: 100%;
-                   text-align: center;
+                    width: 100%;
+                    text-align: center;
                     margin: 0 1rem;
                 }
             }

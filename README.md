@@ -58,7 +58,7 @@ Ce projet a été réalisé dans le cadre du défi d’administration de postes 
 
 ### Vidéo explicative du projet
 
-Pour visionner une vidéo expliquant le développement et les résultats du projet (le script shell), cliquez [ici](video_explication_script_shell/video2_ABC-solution_Script_Shell.mp4).
+Pour visionner une vidéo expliquant le développement et les résultats du projet (le script shell), cliquez [ici](lien_site_web_complet).
 
 #### Lien vers le site complet
 

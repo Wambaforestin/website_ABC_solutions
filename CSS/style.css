@@ -566,18 +566,18 @@ section {
 .pricing {
     /* background-color: var(--slightly-dark-color); */
 
-   div {
-    .text{
-        font-size: 4rem;
-        margin-bottom: 2rem;
-        font-weight: 700;
-        text-transform: uppercase;
-        color: var(--primary-color);
-        font-family: 'Literata', serif;
-        font-style: italic;
-        text-align: center;
+    div {
+        .text {
+            font-size: 4rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--primary-color);
+            font-family: 'Literata', serif;
+            font-style: italic;
+            text-align: center;
+        }
     }
-   }
 
     .toggle-buttons {
         display: flex;
@@ -656,7 +656,7 @@ section {
                     font-weight: 700;
                 }
 
-                &.year{
+                &.year {
                     display: none;
                 }
             }
@@ -778,7 +778,35 @@ section {
                 }
             }
         }
-        
+
+    }
+}
+
+/* brands */
+
+.brands {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 2rem;
+    margin-top: 2rem;
+
+    &.brands:hover .brands-container {
+        animation-play-state: paused;
+    }
+
+    .brands-container {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 2rem;
+        animation: brands 10s linear infinite;
+
+        img {
+            width: 10rem;
+            height: 10rem;
+            object-fit: cover;
+        }
+
     }
 }
 
@@ -826,6 +854,16 @@ section {
 
     100% {
         transform: scale(1);
+    }
+}
+
+@keyframes brands {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
     }
 }
 
@@ -962,8 +1000,8 @@ section {
                     height: 40rem;
                 }
             }
-²
-            .content {
+
+            ² .content {
 
                 h3 {
                     font-size: 3rem;

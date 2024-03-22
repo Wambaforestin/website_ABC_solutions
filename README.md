@@ -53,13 +53,19 @@ Incluez des captures d'écran qui illustrent les étapes clés de votre configur
 
 Ce projet a été réalisé dans le cadre du défi d’administration de postes clients proposé par l’entreprise ABC-Solutions. Le but de ce projet était de configurer un poste client Linux, de gérer les autorisations avec setfacl et getfacl, de développer un site web conforme au design de l’entreprise, et de le déployer sur un serveur web.
 
-![Résultat du projet](images/screenshots/web.jpg)
-![Résultat du projet sur mobile](images/screenshots/mobile.jpg)
+<div style="display: flex; justify-content: space-around;">
+    <div style="flex: 1; margin-right: 10px;">
+        <img src="images/screenshots/web.jpg" alt="Résultat du projet" style="max-width: 100%;" />
+    </div>
+    <div style="flex: 1; margin-left: 10px;">
+        <img src="images/screenshots/mobile.jpg" alt="Résultat du projet sur mobile" style="max-width: 100%;" />
+    </div>
+</div>
 
 ### Vidéo explicative du projet
 
-Pour visionner une vidéo expliquant le développement et les résultats du projet (le script shell), cliquez [ici](lien_site_web_complet).
+Pour visionner une vidéo expliquant le développement et les résultats du projet (le script shell), cliquez [ici](https://drive.google.com/file/d/1eEJNkt6rNwlqA5dVtlDkI5Z4qW3SBE1X/view?usp=drive_link).
 
 #### Lien vers le site complet
 
-Pour accéder au site web complet "Administration de Postes Clients - Projet ABC Solutions", cliquez [ici](lien_site_web_complet)
+Pour accéder au site web complet "Administration de Postes Clients - Projet ABC Solutions", cliquez [ici](https://wambaforestin.github.io/website_ABC_solutions/)

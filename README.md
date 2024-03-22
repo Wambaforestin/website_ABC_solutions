@@ -1,5 +1,7 @@
 # Administration de Postes Clients - Projet ABC-Solutions
 
+![Résultat du projet](images/screenshots/web.jpg)
+
 ## Défi d'Administration de Postes Clients - Entreprise ABC Solutions
 
 ### Contexte
@@ -53,7 +55,6 @@ Incluez des captures d'écran qui illustrent les étapes clés de votre configur
 
 Ce projet a été réalisé dans le cadre du défi d’administration de postes clients proposé par l’entreprise ABC-Solutions. Le but de ce projet était de configurer un poste client Linux, de gérer les autorisations avec setfacl et getfacl, de développer un site web conforme au design de l’entreprise, et de le déployer sur un serveur web.
 
-![Résultat du projet](images/screenshots/web.jpg)
 ![Résultat du projet sur mobile](images/screenshots/mobile.jpg)
 
 ### Vidéo explicative du projet

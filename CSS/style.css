@@ -684,7 +684,7 @@ section {
                         }
 
                         &.ri-close-circle-fill {
-                            color: var(--danger-color);
+                            color: var(--warning-color)
                         }
                     }
                 }
@@ -709,6 +709,76 @@ section {
                 }
             }
         }
+    }
+}
+
+/* newsletter */
+
+.newsletter {
+    background-color: var(--slightly-dark-color);
+
+    .news {
+
+        h3 {
+            font-size: 3rem;
+            margin-bottom: 2rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: var(--primary-color);
+            font-family: 'Literata', serif;
+            font-style: italic;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.8rem;
+            line-height: 1.6;
+            padding: 1rem 0;
+            color: var(--light-color);
+            margin: 1rem auto;
+            text-align: center;
+
+            span {
+                color: var(--primary-color);
+                font-weight: 700;
+            }
+        }
+
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 2rem;
+            flex: wrap;
+
+            input {
+                max-width: 50rem;
+                padding: 1rem 2rem;
+                font-size: 1.6rem;
+                border-radius: var(--border-radius);
+                border: 1px solid var(--primary-color);
+                background-color: var(--slightly-dark-color);
+                color: var(--light-color);
+            }
+
+            button {
+                background-color: var(--primary-color);
+                color: var(--light-color);
+                width: 15rem;
+                padding: 1rem 2rem;
+                font-size: 1.6rem;
+                border-radius: var(--border-radius);
+                transition: var(--transition);
+                cursor: pointer;
+
+                &:hover {
+                    background-color: var(--light-color);
+                    color: var(--primary-color);
+                }
+            }
+        }
+        
     }
 }
 
@@ -907,6 +977,28 @@ section {
                     width: 100%;
                     text-align: center;
                     margin: 0 1rem;
+                }
+            }
+        }
+    }
+
+    .newsletter {
+        .news {
+            h3 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1.4rem;
+            }
+
+            form {
+                input {
+                    max-width: 100%;
+                }
+
+                button {
+                    width: 100%;
                 }
             }
         }

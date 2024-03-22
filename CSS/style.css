@@ -785,11 +785,10 @@ section {
 /* brands */
 
 .brands {
-    overflow: hidden;
-    display: flex;
+    margin-top: 4rem;
+    overflow: hidden;    display: flex;
     justify-content: space-evenly;
     gap: 2rem;
-    margin-top: 2rem;
 
     &.brands:hover .brands-container {
         animation-play-state: paused;
@@ -810,6 +809,65 @@ section {
     }
 }
 
+/* footer */
+
+.footer {
+    background-color: var(--slightly-dark-color);
+
+    .box-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        gap: 2rem;
+        align-items: flex-start;
+        justify-content: center;
+
+        .box {
+
+            h3 {
+                font-size: 2.5rem;
+                margin-bottom: 2rem;
+                color: var(--secondary-color);
+                margin-bottom: 1rem;
+            }
+    
+            a {
+                font-size: 1.6rem;
+                color: var(--light-color);
+                transition: var(--transition);
+                display: block;
+                padding: 1rem 0;
+
+                p {
+                   color: var(--light-color);
+                
+                }
+
+                i {
+                    margin-right: 1rem;
+                    color: var(--primary-color);
+                }
+
+                &:hover {
+                    color: var(--primary-color);
+                }
+            }
+        }
+    }
+
+    .credit {
+        background-color: var(--dark-color);
+        padding: 3rem 2rem;
+        text-align: center;
+        color: var(--secondary-color);
+        font-size: medium;
+
+        span {
+            color: var(--primary-color);
+            font-weight: 700;
+            background-clip: text;
+        }
+    }
+}
 
 
 /* animations */
